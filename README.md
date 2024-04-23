@@ -45,8 +45,9 @@ Ensure you have the following prerequisites installed on your local system.
    a. Customize Installation (recommended)
 
       ```bash
-      # Install PyTorch
+      # Install pre-requisits
       $ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+      $ pip install chardet
       
       # Install MMCV using MIM.
       $ pip install -U openmim
