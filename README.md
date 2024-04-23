@@ -45,16 +45,18 @@ Ensure you have the following prerequisites installed on your local system.
    a. Customize Installation (recommended)
 
       ```bash
+      # Install PyTorch
+      $ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+      
       # Install MMCV using MIM.
-   
       $ pip install -U openmim
       $ mim install mmcv-full
    
       # Clone this repository
-      $ git clone https://github.com/WoojuLee24/OA-DG.git
+      $ git clone https://github.com/borgarpa/OA-DG-Peltorobotti.git
    
       # Go into the repository
-      $ cd OA-DG
+      $ cd OA-DG-Peltorobotti
    
       # Install mmdetection
       $ pip install -v -e .
