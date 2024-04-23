@@ -46,12 +46,13 @@ Ensure you have the following prerequisites installed on your local system.
 
       ```bash
       # Install pre-requisits
+      $ conda create -n OA-DG python=3.10 -y
       $ conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
       $ conda install -c conda-forge chardet
       
       # Install MMCV using MIM.
       $ pip install -U openmim
-      $ mim install mmcv-full
+      $ mim install mmcv-full==1.5.0
    
       # Clone this repository
       $ git clone https://github.com/borgarpa/OA-DG-Peltorobotti.git
