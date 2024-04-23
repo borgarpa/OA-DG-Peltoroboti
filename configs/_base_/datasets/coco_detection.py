@@ -1,8 +1,8 @@
 # dataset settings
 dataset_type = 'CocoDataset'
-data_root = '/ws/data/coco/'
+data_root = '/data/coco/dataset-v3'
 img_norm_cfg = dict(
-    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+    mean=[131.822, 128.974, 120.001], std=[33.116, 31.281, 32.664], to_rgb=True)
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True),
@@ -33,17 +33,17 @@ data = dict(
     workers_per_gpu=2,
     train=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/instances_train2017.json',
-        img_prefix=data_root + 'train2017/',
+        ann_file=data_root + '/train/annotations.json',
+        img_prefix=data_root + '/train/',
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/instances_val2017.json',
-        img_prefix=data_root + 'val2017/',
+        ann_file=data_root + '/test/annotations.json',
+        img_prefix=data_root + '/test/',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/instances_val2017.json',
-        img_prefix=data_root + 'val2017/',
+        ann_file=data_root + '/valid/annotations.json',
+        img_prefix=data_root + '/valid/',
         pipeline=test_pipeline))
 evaluation = dict(interval=1, metric='bbox')
