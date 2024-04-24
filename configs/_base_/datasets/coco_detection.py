@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'CocoDataset'
-data_root = '/data/coco/dataset-v3'
+data_root = './data/coco/dataset-v3'
 img_norm_cfg = dict(
     mean=[131.822, 128.974, 120.001], std=[33.116, 31.281, 32.664], to_rgb=True)
 train_pipeline = [
