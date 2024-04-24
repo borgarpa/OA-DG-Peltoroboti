@@ -60,7 +60,7 @@ oamix_config=dict(
 ###############
 custom_imports = dict(imports=['mmdet.datasets.pipelines.oa_mix'], allow_failed_imports=False)
 img_norm_cfg = dict(
-    mean=[131.822, 128.974, 120.001], std=[33.116, 31.281, 32.664], to_rgb=True)
+    mean=[131.868, 128.973, 120.391], std=[33.107, 31.271, 32.656], to_rgb=True)
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True),
