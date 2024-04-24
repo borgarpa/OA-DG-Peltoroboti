@@ -73,4 +73,4 @@ train_pipeline = [
     dict(type='Collect', keys=['img', 'img2', 'gt_bboxes', 'gt_bboxes2', 'gt_labels',
                                'multilevel_boxes', 'oamix_boxes']),
 ]
-data = dict(train=dict(dataset=dict(pipeline=train_pipeline)))
+data = dict(train=dict(pipeline=train_pipeline)) # dataset=dict()
