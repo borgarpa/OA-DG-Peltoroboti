@@ -74,6 +74,7 @@ Ensure you have the following prerequisites installed on your local system.
    ```bash
    # For image processing operations.
    $ pip install Pillow
+   $ pip install scikit-learn
    # For spectral-residual saliency algorithm in OA-Mix.
    $ pip install opencv-python
    $ pip install opencv-contrib-python
