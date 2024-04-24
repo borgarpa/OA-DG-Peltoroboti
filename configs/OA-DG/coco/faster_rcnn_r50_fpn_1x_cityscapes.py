@@ -1,7 +1,7 @@
 _base_ = [
-    '/ws/external/configs/_base_/models/faster_rcnn_r50_fpn.py',
-    '/ws/external/configs/_base_/datasets/coco_detection.py',
-    '/ws/external/configs/_base_/default_runtime.py'
+    '../../_base_/models/faster_rcnn_r50_fpn.py',
+    '../../_base_/datasets/coco_detection.py',
+    '../../_base_/default_runtime.py'
 ]
 
 
