@@ -74,3 +74,11 @@ train_pipeline = [
                                'multilevel_boxes', 'oamix_boxes']),
 ]
 data = dict(train=dict(pipeline=train_pipeline)) # dataset=dict()
+
+#############
+### OTHER ###
+#############
+runner = dict(
+    type='EpochBasedRunner', max_epochs=8) # previously 2, but it might keep improving after that # actual epoch = 2 * 8 = 16
+work_dir='./results/dataset-v3'
+
