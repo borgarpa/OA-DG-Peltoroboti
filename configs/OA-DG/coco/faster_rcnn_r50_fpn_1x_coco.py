@@ -42,7 +42,7 @@ lr_config = dict(
     # [1] yields higher performance than [0]
     step=[1])
 runner = dict(
-    type='EpochBasedRunner', max_epochs=2) # # actual epoch = 2 * 8 = 16
+    type='EpochBasedRunner', max_epochs=8) # previously 2, but it might keep improving after that # actual epoch = 2 * 8 = 16
 
 
 ###############
