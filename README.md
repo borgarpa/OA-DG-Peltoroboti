@@ -49,6 +49,7 @@ Ensure you have the following prerequisites installed on your local system.
       $ conda create -n OA-DG python=3.10 -y
       $ conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
       $ conda install -c conda-forge chardet
+      $ pip3 install imagecorruptions
       
       # Install MMCV using MIM.
       $ pip install -U openmim
